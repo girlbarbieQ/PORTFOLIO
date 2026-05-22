@@ -1,5 +1,10 @@
 /* RESET */
-
+@font-face{
+    font-family: "Billa Mount";
+    src: url("../fonts/BillaMount-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
