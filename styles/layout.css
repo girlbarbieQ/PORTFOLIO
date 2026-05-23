@@ -338,7 +338,7 @@
     width: 93%;
     padding: 12rem 6rem 80rem 3rem;
     position: relative;
-    margin-top: 48vh;
+    margin-top: 40vh;
     z-index: 1;
 }
 .projects-grid{
@@ -362,13 +362,16 @@
     display: block;
     object-fit:cover;
     height: 300px;
+
+    filter: grayscale(100%);
+    
     transition: 
     transform 0.8s ease,
     filter 0.8s ease;
 }
 .project-card img:hover{
     transform: scale(1.02);
-    filter: contrast(1.05);
+    filter: grayscale(0%) contrast(1.05);
 }
 .project-info{
     margin-top: 0.6rem;
@@ -440,7 +443,7 @@
     background: var(--darkest-color);
     color: var(--lightest-color);
     width: 100%;
-    margin-top: 14rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: start;
 }
@@ -501,6 +504,9 @@ body{
     isolation: isolate;
 }
 .noise-layer{
+    --x: -9999px;
+    --y: -9999px;
+
     position: fixed;
     inset: 0;
     pointer-events: none;
@@ -542,8 +548,13 @@ html,
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    cursor: auto !important;
 }
+ .custom-cursor,
+    .noise-layer{
+        display:none !important;
+        pointer-events:none !important;
+    }
 /* MOBILE NAVBAR */
 .navbar {
     width: 100%;
@@ -663,6 +674,7 @@ body{
     width: 100%;
     padding: 8rem 1.5rem;
     margin-top: 35vh;
+    margin-bottom: 8rem;
 }
 .projects-grid{
     display: flex;
@@ -678,12 +690,15 @@ body{
 .column-2,
 .column-3{
     margin-top: 0;
+    transform:none !important;
 }
 .project-card img{
     width: 100%;
     display: block;
     object-fit: cover;
     height: 300px;
+    filter: grayscale(0%);
+    transform: none;
 }
 .project-info{
     margin-top: 0.8rem;
@@ -702,9 +717,13 @@ body{
 /* MOBILE FOOTER */
 .footer{
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 0;
     padding: 0;
+    display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 20;
+
 }
 .footer-content{
     width: 100%;

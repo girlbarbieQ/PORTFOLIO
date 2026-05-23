@@ -16,6 +16,25 @@ window.addEventListener("scroll", () => {
 });
 
 /* CURSOR */
+if(window.innerWidth > 768){
+
+const cursor = document.querySelector(".custom-cursor");
+const noiseLayer = document.querySelector(".noise-layer");
+
+window.addEventListener("mousemove", (e) => {
+
+    const x = e.clientX;
+    const y = e.clientY;
+
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+
+    noiseLayer.style.setProperty("--x", `${x}px`);
+    noiseLayer.style.setProperty("--y", `${y}px`);
+
+});
+
+}
 const cursor = document.querySelector(".custom-cursor");
 const noiseLayer = document.querySelector(".noise-layer");
 
