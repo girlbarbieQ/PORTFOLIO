@@ -711,7 +711,7 @@ body{
 /* MOBILE LOOP */
 .front-loop{
         position: absolute;
-        bottom: -6rem;
+        bottom: -14rem;
         top: auto;
         left: 0;
         width: 100%;
