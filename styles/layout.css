@@ -362,16 +362,13 @@
     display: block;
     object-fit:cover;
     height: 300px;
-
-    filter: grayscale(100%);
-    
     transition: 
     transform 0.8s ease,
     filter 0.8s ease;
 }
 .project-card img:hover{
     transform: scale(1.02);
-    filter: grayscale(0%) contrast(1.05);
+    filter:contrast(1.05);
 }
 .project-info{
     margin-top: 0.6rem;
