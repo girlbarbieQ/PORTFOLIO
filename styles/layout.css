@@ -190,6 +190,7 @@
     width: 100%;
     overflow: hidden;
     margin-top: 10rem;
+    margin-bottom: 8em;
     padding:0;
 }
 .end-track{
@@ -336,7 +337,7 @@
 /* GRIDS LAYOUT */
 .projects{
     width: 93%;
-    padding: 12rem 6rem 80rem 3rem;
+    padding: 12rem 6rem 60rem 3rem;
     position: relative;
     margin-top: 40vh;
     z-index: 1;
@@ -440,7 +441,7 @@
     background: var(--darkest-color);
     color: var(--lightest-color);
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: start;
 }
